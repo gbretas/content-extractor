@@ -2,7 +2,7 @@ import uvicorn
 import sys
 
 
-def app():
+def start():
     if sys.platform == 'win32':
         uvicorn.run("app:app", host="localhost", port=5008, workers=1, reload=True)
     else:
